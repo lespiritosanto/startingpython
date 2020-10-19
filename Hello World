@@ -1,0 +1,7 @@
+# Hello world program with the things i've learned so far
+
+print('Hello World!')
+
+name = str(input('What is your name? ')).strip()
+
+print('\033[7;30;31mWelcome to Python learning, {}!\033[m'.format(name))
