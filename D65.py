@@ -2,7 +2,7 @@
 # and also tell which number is the biggest and also the lowest. The program should also
 # ask the user if he wants it to continue
 
-first = second = average = counter = soma = 0
+first = second = average = 0
 answer = 'yes'
 
 
