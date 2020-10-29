@@ -7,9 +7,15 @@ for item in range(0, 5):
     lista.append(float(input('Please type a number: ')))
 
 print('+=' * 25)
-print('The biggest value is {} and it is {}° in the list.'
-      .format(max(lista), lista.index(max(lista)) + 1))
-print('+=' * 25)
-print('The lowest value is {} and it is {}° in the list.'
-      .format(min(lista), lista.index(min(lista)) + 1))
-print('+=' * 25)
+print('The biggest value is {}. Position...'.format(max(lista)), end='')
+for i, value in enumerate(lista):
+    if value == max(lista):
+        print('{}...'.format(i), end='')
+
+print('\n', '+=' * 25)
+print('The lowest value is {}. Position...'.format(min(lista)), end='')
+for i, value in enumerate(lista):
+    if value == min(lista):
+        print('{}...'.format(i), end='')
+
+print('\n', '+=' * 25)
