@@ -12,11 +12,14 @@ for l in range(0, 3):
 print('+=' * 20)
 
 added = 0
+even = 0
 
 for l in range(0, 3):
     for g in range(0, 3):
         print(f'[{matrix[l][g]}]', end=' ')
         added += matrix[l][g]
+        if matrix[l][g] % 2 == 0:
+            even += matrix[l][g]
     print()
 
 print('+=' * 20)
@@ -24,5 +27,6 @@ print('+=' * 20)
 third_column = matrix[0][2] + matrix[1][2] + matrix[2][2]
 
 print(f'The sum of the values is: {added:.2f}. ')
+print(f'The sum of the even numbers in the matrix is {even}. ')
 print(f'The biggest value in the second line of the matrix is {max(matrix[1])}. ')
 print(f'The sum of values in the third column is {third_column}. ')
