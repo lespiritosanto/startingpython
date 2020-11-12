@@ -3,6 +3,7 @@
 # between 1 and 60 for each game, putting all in a compost list
 
 from random import randint
+from time import sleep
 
 n = int(input('How many games do you want to generate? '))
 games = []
@@ -17,5 +18,10 @@ for i in range(0, n):
 
 print('+=' * 20)
 print('The games are: ')
+sleep(1)
 for i in games:
     print(i)
+    sleep(1)
+
+print('+=' * 20)
+print('Good Luck!')
